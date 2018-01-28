@@ -1,0 +1,75 @@
+{
+	"path" : {
+		"app" : "app/",
+		"dst" : "build/",
+		"watch": {
+			"scss": "scss/**/*.scss",
+			"pug": "pug/**/*.*",
+			"js": "js/**/*.js",
+			"images": "images/**/*.*",
+			"font": "font/"
+		},
+
+		"css": {
+			"in": "scss/*.scss",
+			"out": "styles/",
+			"sourcemap": "source/maps/",
+			"scss_source_in": "scss/**/*.*",
+			"scss_source_copy": "styles/source/scss/",
+			"gzip": "styles/gzip/"
+		},
+		"pug": {
+			"in": "pug/*.pug",
+			"out": "",
+			"json": ""
+		},
+		"js": {
+			"in": "js/**/*.js",
+			"out": "js/",
+			"sourcemap": "source/maps/",
+			"js_source_in": "js/**/*.*",
+			"js_source_copy": "js/source/",
+			"libs": [
+						"/*libs_array*/",
+						"app/libs/tether/dist/js/tether.js",
+						"app/libs/jquery/dist/jquery.js",
+						"app/libs/bootstrap/dist/js/bootstrap.js",
+						"app/libs/iCheck/icheck.min.js"
+					]
+		},
+		"images": {
+			"in": "images/**/*.*",
+			"out": "images/"
+		},
+		"fonts": {
+			"in": "fonts/",
+			"out": "fonts/",
+			"awesome": "libs/font-awesome/fonts/**/*.*"
+		}
+
+	},
+
+
+	"prop" : {
+		
+		"css": {
+			"min": true,
+			"concat": true,
+			"sourcemap": true,
+			"scss_source_copy": true,
+			"gzip": true
+		},
+		"pug": {
+			"dataJson": false
+		},
+		"js": {
+			"min": true,
+			"concat": true,
+			"sourcemap": true,
+			"source_copy": true
+		},
+		"fonts": {
+			"awesome": true
+		}
+	}
+}

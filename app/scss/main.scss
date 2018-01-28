@@ -1,0 +1,35 @@
+/** ---------------------------------------
+* Copyright 2018©
+* dev. Pavel Ugrynovych (Lauer)
+-------------------------------------------
+*/
+
+/**
+* [Bootstrap]
+*/
+@import "../libs/bootstrap/scss/_functions";
+@import "include/_variables";
+@import "../libs/bootstrap/scss/bootstrap";
+/**
+* [Animate.css]
+*/
+@import "../libs/animate-sass/_animate";
+/**
+* [Hover.css]
+*/
+@import "../libs/hover/scss/hover";
+/**
+* [Font-awesome.css]
+*/
+@import "../libs/font-awesome/scss/font-awesome";
+@import "../libs/font-awesome-animation/src/_font-awesome-animation";
+// mixins
+@import "include/_mixin";
+// variables
+@import "include/project_variables";
+
+
+/**
+* [site styles]
+*/
+@import "styles/theme";

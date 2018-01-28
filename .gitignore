@@ -1,0 +1,11 @@
+/node_modules/
+/dist/
+/build/
+/app/libs/
+/.git/
+/**/*.psd
+/**/Thumbs.db
+/**/.DS_Store
+.sublime-gulp.cache
+package-lock.json
+desktop.ini

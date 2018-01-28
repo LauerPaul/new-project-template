@@ -1,0 +1,92 @@
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	    -ms-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+@mixin box-shadow ($param) {
+    -webkit-box-shadow: $param;
+       -moz-box-shadow: $param;
+            box-shadow: $param;
+}
+
+@mixin input-placeholder() {
+    &.placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+@mixin center-absolute () {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+@mixin transition($param) {
+-webkit-transition: $param;
+   -moz-transition: $param;
+    -ms-transition: $param;
+     -o-transition: $param;
+        transition: $param;
+}
+
+@mixin animation($param){
+	-webkit-animation: $param;
+	   -moz-animation: $param;
+	    -ms-animation: $param;
+	    	animation: $param;
+}
+
+@mixin animation-delay ($param){
+	-webkit-animation-delay: $param;
+	   -moz-animation-delay: $param;
+	    -ms-animation-delay: $param;
+	        animation-delay: $param;
+}
+
+// keyframes mixin
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin transform($param) {
+    -webkit-transform: $param;
+    -ms-transform: $param;
+    transform: $param;
+}
+
+// Mixin itself
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+@mixin clamp($a, $b) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $a;
+    -webkit-box-orient: vertical;
+    max-height: $b;
+}
